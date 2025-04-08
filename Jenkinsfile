@@ -22,10 +22,12 @@ pipeline {
                 '''
             }
         }
-    }
-    stages {
-        steps {
-            echo "Test stage..."
+        
+        stages ('Test') {
+            steps {
+                echo "Test stage..."
+            }
         }
     }
+    
 }
